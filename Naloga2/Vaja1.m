@@ -15,3 +15,9 @@ A(2,3)
 A(:,2)
 A(3,:)
 A(1:(end-1),[2 4])
+max(max(A))
+A * .5
+B.^2
+B^2
+A * diag(diag(B))
+B - tril(B)
