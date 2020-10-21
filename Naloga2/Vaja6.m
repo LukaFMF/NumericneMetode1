@@ -16,7 +16,13 @@ function A = MatrikaA(_vecX,_vecY)
 	endfor
 endfunction
 
+function A = MatrikaA1(_vecX,_vecY)
+	[I,J] = ndgrid(_vecX,_vecY);
+	A = I ./ J;
+endfunction
+
 vecX = input("Vnesi vektor x: ");
 vecY = input("Vnesi vektor y: ");
 
 MatrikaA(vecX,vecY)
+MatrikaA1(vecX,vecY)
