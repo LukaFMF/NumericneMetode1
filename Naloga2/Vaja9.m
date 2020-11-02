@@ -20,6 +20,9 @@ odvod = OdvodPolinoma(vecX);
 
 x = linspace(najmanj,najvec,500);
 figure(1);
-plot(x,polyval(vecX,x),x,polyval(odvod,x));
+plot(x,polyval(vecX,x));
+hold on;
+plot(x,polyval(odvod,x));
+hold off;
 
 waitfor(1);
